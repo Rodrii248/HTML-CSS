@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML 5</title>
+
+    <!--Formatos de vídeos mais suportados em sites: Mp4/Mpv, Webm(Arquivo pequeno com qualidade sofrida) e Ogv-->
+</head>
+<body>
+       <h1>Inserindo vídeos hospedados localmente</h1>
+       <p>Este vídeo está hospedado em meu próprio servidor</p>
+
+          <!--A tag "width"" determina a largura da área de conteúdo de um elemento-->
+          <!--A tag "video" é para colocar video-->
+          <!--[LEMBRETE]:Para que o vídeo rode NÃO ESQUEÇA de colocar "controls altoplay" no fial-->
+         
+          <h2>Video mp4:</h2>
+          <video src="midia/Meu Nome É Julia.mp4.mp4"width="560px" controls></video>
+
+
+          <h2>video Ogv:</h2>
+          <video src="midia/SnapInsta.io-Felipe Smith (Legendado)-(480p).ogv"width="560px" controls></video>
+
+          <h2>Video Webm:</h2>
+          <video src="midia/Freddymercuryprateado.webm.Webm"width="560px" controls></video>
+
+        <h2>Outras formas de usar caso a pessoa não use APENAS chrome</h2>
+        
+        <video width="560px" controls>
+
+            <source src="midia/Freddymercuryprateado.webm.Webm" type="video/webm">
+            <source src="midia/Meu Nome É Julia.mp4.mp4" type="video/mp4">
+            <source src="midia/SnapInsta.io-Felipe Smith (Legendado)-(480p).ogv" type="video/ogv">
+
+            <p>Seu navegador não tem compatibilidade par reproduzir videos</p>
+        </video>
+
+
+        <h1>Incorporação de vídeos externos</h1>
+
+        <h2>Inserindo videos do youtube:</h2>
+        <!--Para azer isso basta ir em um vídeo no youtube >>> Clicar em compartilhar >>> Incorporar(<>) e copiar o codigo já montado e colar aqui.-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=cZHlqFNmP1kiZR-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
+</body>
+</html>
