@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+     <H1>Imagem dinâmica</H1>
+
+      <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e dimua o tamnha do seu navegador.</p>
+       
+      <!--A Tag "Picture" permite que apareça várias fontes-->
+        <picture>
+
+                   <!--Imagem G(computador/tv) = 1000px  | Imagem M(computador/tv) = 700px  | Imagem P(celular) = 500px
+                    
+                    Tag "source:media:type":é utilizado para especificar múltiplos recursos de mídia de elementos <picture> , <audio> ou <video> em HTML5.-->
+
+                    <!--[LEMBRETE] A tag source só irá funcionar se as ordens das imagens forem da MENOR para a MAIOR-->
+
+                    <source media="(max-width:750px )" srcset="Imagens/ImagemP.png" type="image/png">
+
+                    <!--(O que irá acontecer logo embaixo?!)
+                    Por padrão vai carregar a imagem G porém se o seu navegador tiver menos que 1050px (basta fechar um pouco a tela) irá aparecer a imagem M
+                    -->-->
+                    <source media="(max-width:1050px)" srcset="Imagens/ImagemM.png" type="image/png">
+                     
+                    <img src="Imagens/ImagemG.png" alt="Imagem flexível">        
+         </picture>
+
+           <h1>Reproduzindo audios</h1>   
+           
+           <p>Vamos aprender a reproduzir audios em HTML5.</p>
+           
+           <!--A Tag "audio" serve pra colocar audio no seu site
+            Juntamente com a Tag controls + autoplay serve para aparecer o play do audio.-->
+            <h3>Primeiro áudio:</h3>
+           <audio src="midia/guanacast-33.mp3" controls autolay></audio>
+
+            <h3>Segundo áudio:</h3>
+           <audio src="midia/Open Highway - ALBIS.mp3" controls autoplay></audio>
+
+            <!--Formatos de áudio que o visual code aceita: MP3, WAF, OGG-->
+             
+            <h2>Outras formas de colocar audio</h2>
+            <audio preload="metadata" autoplay controls>
+                    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+                    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+                    <source src="midia/guanacast-33.wav" type="audio/wav">
+                    
+                    <p>Caso não aparecça para dar play no audio no site é porque o navegador da pessoa não permite ouvir audios</p>
+
+             </audio>
+
+
+            <p>Caso não aparecça para dar play no audio no site é porque o navegador da pessoa não permite ouvir audios</p>
+            
+            <a href="midia/Open Highway - ALBIS.mp3">Clique aqui para baixar o arquivo</a>
+        
+                  
+                       
+       
+        
+           
+
+
+</body>
+</html>
