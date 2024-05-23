@@ -1,0 +1,46 @@
+/* a Tag "@charset "UTF-8";" serve para não ter problemas com caracteres especiais*/
+
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+
+main {
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #4b42389d;
+    width: 600px;
+    padding: 50px;
+    margin: auto;
+    /* A tag "padding" significa acolchoamento (é responsável por definir uma distância interna entre um elemento e sua borda.
+    /* A tag "margin:auto" centraliza o elemento no meio da tela*/
+    /* A tag "border-radius" deixa as bordas arredondadas*/
+    /* A tag "box-shadow" serve para deixar as bordas com uma sombra*/
+}
+body {
+
+  background-image: linear-gradient(to right,#F2D7B6,#D97B59 );
+}
+    
+
+p {
+
+    text-align: justify;
+}
+h1 {
+     color: #A68C6D;
+     text-align: center;
+     text-shadow: 1px 1px 2px #443a2da4;
+
+}
+
+h2 {
+    color: #8C3D35;
+
+
+}

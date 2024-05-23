@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes em css</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+    body {
+      
+
+      font-family: 'Work sans-serif' ;
+    
+    /*Medidas Absolutas
+    cm(Centímetros), mm(Milímetros), in(Polegadas),px (Píxel), pt(Ponto), pc(Parca)
+
+    Medidas Relativas
+    em(Tamanho atual da fonte),ex(altura x de uma fonte),rem(tipo em), vw(Largura da tela),vh(Altura da tela), %(Porcentagem)*/
+
+    /*É recomendado que usa apenas px e em*/
+    /* 1em = 16px*/
+     font-size: 1em;
+
+     font-weight: bold ;
+     /*Peso ou negrito*/
+     /*Termos em weight: Lighter(mais leve), normal(normal), bold(escuro), bolder(mais escuro)*/
+     font-style: italic;
+
+    }
+
+    h1 {
+          /*font-family: Georgia, 'Times New Roman', Times, serif;
+          font-weight: bolder;
+          font-size: 3em;
+          font-style: italic;*/
+
+          /*shorthand font (Basicamente é uma sequencia para simplificar as linhas de cima)*/
+
+          /*font style -> font-weight -> font-size -> font-family */
+
+          font:italic bolder 3em Georgia, 'Times New Roman', Times, serif;
+    }
+  h2 {
+
+     font: italic bold 2em 'Courier New', Courier, monospace; 
+  }
+  </style>
+</head>
+<body>
+  <h1>Trabalhando com fontes</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, est dolor corporis error inventore similique distinctio? Eaque laboriosam debitis itaque eos optio. Repellendus animi itaque ex quos nesciunt libero esse!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio cum minima itaque repudiandae? Vitae, libero? Nemo quam numquam architecto iste, necessitatibus, recusandae unde fugiat vitae neque optio eveniet fugit quia?</p>
+  <h2>Parágrafo 2</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloribus similique perspiciatis suscipit commodi tempora fugiat aliquam voluptatum error, iusto debitis atque voluptatibus consequatur libero vel voluptate facere sit beatae.</p><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ipsam eaque facilis magni commodi? Veniam esse sit explicabo fuga mollitia atque vel! Natus aperiam similique debitis assumenda blanditiis. Nemo, nisi!</p>
+</body>
+</html>
